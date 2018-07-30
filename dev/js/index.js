@@ -3,8 +3,9 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
-import allReducers from './reducers'
-import App from './components/app'
+import allReducers from './reducers';
+import App from './components/app';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
 
 
 const store = createStore(
@@ -14,7 +15,7 @@ const store = createStore(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <App/>
     </Provider>,
     document.getElementById('root')
 );

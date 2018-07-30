@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { selectUser } from '../action/index';
+require("../../scss/style.scss");
 
 class UserList extends Component {
 
@@ -13,7 +14,7 @@ class UserList extends Component {
                 onClick={() => this.props.selectUser(user)}
             >
                  {user.first} {user.last}
-            </li>
+            </li>            
             );
         });
     }
